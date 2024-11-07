@@ -122,3 +122,43 @@ header .container {
        color: #FF0000;
        font-size: 14px;
 }
+
+/*-----------------
+       HOVER
+------------------*/
+
+/*-----------------
+       FOOTER
+------------------*/
+
+footer {
+       background-color: #1A1A1A;
+       padding: 20px;
+       color: #fff;
+       line-height: 1.5;
+
+}
+
+footer .container {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+}
+
+
+footer .icons {
+       word-spacing: 2px;
+       font-size: 28px;
+}
+
+footer .icons strong {
+       font-size: 18px;
+       word-spacing: normal;
+}
+
+.footnav a {
+       text-decoration: none;
+       color: inherit;
+       font-size: 14px;
+       padding-right: 4px;
+}
