@@ -1,10 +1,10 @@
 /*-----------------
        RESET
 ------------------*/
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
 
 }
 
@@ -12,16 +12,52 @@
        GENERAL
 ------------------*/
 
-.container{
-    max-width: 900px;
-    margin: 0 auto;
+.container {
+       max-width: 1000px;
+       margin: 0 auto;
+}
+
+.img-fluid {
+       max-width: 100%;
+       height: auto;
+}
+
+/*-----------------
+     TYPHOGRAPHY
+/*-----------------*/
+body {
+       font-family: Roboto;
 }
 
 /*-----------------
        HEADER
 ------------------*/
+header {
+       background-color: #FF6900;
+       color: #fff;
+       text-align: center;
+       font-weight: bold;
+       padding: 10px 0;
+       word-spacing: 5px;
+       box-shadow: 0px 0px 5px #A2ACB3
+}
 
+header .container {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+}
 
-/*-----------------
-       FOOTER
-------------------*/
+.container .logo {
+       max-width: 80%;
+}
+
+.container .logo img {
+       max-width: 16%;
+}
+
+.container nav a {
+       text-decoration: none;
+       color: inherit;
+}
+
