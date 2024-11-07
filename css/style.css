@@ -29,6 +29,10 @@ body {
        font-family: Roboto;
 }
 
+s {
+       font-size: 14px;
+}
+
 /*-----------------
        HEADER
 ------------------*/
@@ -39,7 +43,10 @@ header {
        font-weight: bold;
        padding: 10px 0;
        word-spacing: 5px;
-       box-shadow: 0px 0px 5px #A2ACB3
+       box-shadow: 0px 0px 5px #A2ACB3;
+       position: sticky;
+       top: 0;
+       z-index: 3;
 }
 
 header .container {
@@ -61,3 +68,57 @@ header .container {
        color: inherit;
 }
 
+/*-----------------
+       MAIN
+------------------*/
+
+.container .row {
+       display: flex;
+       margin: 50px 0;
+}
+
+.container .col {
+       max-width: calc(100% / 3);
+       padding-right: 10px;
+       position: relative;
+       top: 0;
+       right: 0;
+}
+
+.tags {
+       display: flex;
+       gap: 2px;
+       position: absolute;
+       left: 0;
+       top: 410px;
+}
+
+.tag {
+       color: #fff;
+       font-size: 14px;
+       font-weight: bold;
+       padding: 6px;
+}
+
+.tag.tag-red {
+       background-color: #FF0000;
+}
+
+.tag.tag-green {
+       background-color: #008000;
+}
+
+.heart {
+       position: absolute;
+       top: 10px;
+       right: 10px;
+       background-color: #fff;
+       font-size: 30px;
+       padding: 0 10px;
+
+}
+
+.details .red {
+       color: #FF0000;
+       font-size: 14px;
+}
