@@ -5,7 +5,6 @@
        box-sizing: border-box;
        margin: 0;
        padding: 0;
-
 }
 
 /*-----------------
@@ -20,6 +19,7 @@
 .img-fluid {
        max-width: 100%;
        height: auto;
+       z-index: 1;
 }
 
 /*-----------------
@@ -83,6 +83,7 @@ header .container {
        position: relative;
        top: 0;
        right: 0;
+
 }
 
 .tags {
@@ -91,6 +92,7 @@ header .container {
        position: absolute;
        left: 0;
        top: 410px;
+       z-index: 2;
 }
 
 .tag {
@@ -115,6 +117,7 @@ header .container {
        background-color: #fff;
        font-size: 30px;
        padding: 0 10px;
+       z-index: 2;
 
 }
 
@@ -126,6 +129,18 @@ header .container {
 /*-----------------
        HOVER
 ------------------*/
+.col .img-fluid.hover {
+       position: absolute;
+       top: 0;
+       left: 0;
+       max-width: 97%;
+       opacity: 0;
+}
+
+.col:hover .img-fluid.hover {
+       opacity: 1;
+       transition: 0.3s ease-in-out;
+}
 
 /*-----------------
        FOOTER
@@ -135,7 +150,6 @@ footer {
        background-color: #1A1A1A;
        padding: 20px;
        color: #fff;
-       line-height: 1.5;
 
 }
 
@@ -147,13 +161,19 @@ footer .container {
 
 
 footer .icons {
-       word-spacing: 2px;
-       font-size: 28px;
+       font-size: 25px;
+       padding: 20px;
+       text-align: top;
+}
+
+footer strong {
+       font-size: 18px;
+       display: block;
+       padding-bottom: 10px;
 }
 
 footer .icons strong {
-       font-size: 18px;
-       word-spacing: normal;
+       font-size: 16px;
 }
 
 .footnav a {
